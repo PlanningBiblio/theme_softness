@@ -2,18 +2,22 @@
 Planning Biblio
 Licence GNU/GPL (version 2 et au dela)
 Voir les fichiers README.txt et COPYING.txt
-@copyright -2018-2019 Jérôme Combes
+@copyright 2020 Jérôme Combes
 
-Fichier : themes/light_blue/light_blue.css
+@file : public/themes/softness/softness.css
 @author Jérôme Combes <jerome@planningbiblio.fr>
 
-Description :
-Feuille de style personnalisée pour Compiègne
-
-Incluse dans les fichiers include/header.php et setup/header.php
+@desc
+included by templates/base.html.twig, public/include/header.php and public/setup/header.php
 */
 
 /*
+ * Softness 
+ * Blue : #5587A2 / RGB : 85 135 162
+ * Pink : 64BFA4
+ * Green : F2B2AE
+ * 
+ * Old
  * Red : #EF3340
  * Grey : #333
  * White : #FFFFFF
@@ -60,17 +64,21 @@ body{
   margin-top: 0px;
   width:155px;
   height:50px;
-  background:url("images/logoBlack150.png") no-repeat right top;
+  background:url("images/logoWhite.png") no-repeat right top;
 }
 
 .navigation, #topgauche{
-  background: #d5edf3;
+    background: #5587A2;
     white-space:nowrap;
+    height: 70px;
+}
 
+#content {
+    padding: 60px 5px 5px 5px;
 }
 
 #content-planning{
-  padding: 30px 0 0 0;
+  padding: 0px 0 0 0;
 }
 
 .titreSemFixe{
@@ -105,15 +113,23 @@ body,a,input,select,textarea,button,#auth, #auth input, .menu2, .right,.titreSem
   color: #da1f27;
 }
 
-td.menu_td:hover,td.menu_td2:hover,.th, td.menu_td a:hover, td.menu_td2 a:hover {
-  background: #d5edf3;
-  color: #da1f27;
+td.menu_td:hover,td.menu_td2:hover,.th, td.menu_td2:hover a {
+  background: #5587A2;
+  color: #FFFFFF;
+}
+
+.menu_li a {
+    color: #FFFFFF;
+}
+
+.menu_li:hover a{
+  color: #000;
 }
 
 li.menu_li:hover {
-  background: #d5edf3;
+  background: #64BFA4;
+  color: #000;
 }
-
 
 td.menu_td{
   padding-top: 7px;
@@ -125,24 +141,24 @@ td.menu_td{
 
 /* Notes affichées en bas des plannings */
 #pl-notes-div1, .pl-notes-div1{
-  border : 1px solid #2da2bf;
+  border : 1px solid #5587A2;
 }
 
 /*	DataTables */
 .dataTable tbody tr.odd {
-  background-color:#d5edf3;
+  background-color: rgba(85, 135, 162, 0.2);
 }
 
 .dataTable tbody tr.odd td.sorting_1,
 .dataTable tbody tr.odd td.sorting_2,
 .dataTable tbody tr.odd td.sorting_3{
-  background-color:#abdae6;
+  background-color: rgba(85, 135, 162, 0.2);
 }
 
 .dataTable tbody tr.even td.sorting_1,
 .dataTable tbody tr.even td.sorting_2,
 .dataTable tbody tr.even td.sorting_3{
-  background-color:#d5edf3;
+  background-color: rgba(85, 135, 162, 0.2);
 }
 
 
@@ -191,7 +207,7 @@ td.menu_td{
 /* Style en fonction des classes des tableaux (une classe par bibliothèque ) */
 /* Style par défaut */
 .tr_horaires, .tr_separation, .tr_horaires a{
-  background: #2da2bf;
+  background: #5587A2;
   color: #000;
 }
 
@@ -213,7 +229,7 @@ td.td_obligatoire a, td.td_renfort a{
   color: #000;
 }
 
-/* Jazune */
+/* Jaune */
 .jaune.tr_horaires, .jaune.tr_separation, .jaune.tr_horaires td.td_postes{
   background: #d7c942;
   color: #000;
@@ -264,13 +280,6 @@ td.td_obligatoire a, td.td_renfort a{
 
 .cellule_grise,.tr1, .animation td.cellule_grise {
   background: #DDD;
-}
-
-@media screen {
-    #content, #content-planning{
-        margin-top:12px;
-        background:url("images/anneau.png") repeat-x center top;
-    }
 }
 
 @media print {
