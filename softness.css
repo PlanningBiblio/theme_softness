@@ -14,8 +14,8 @@ included by templates/base.html.twig, public/include/header.php and public/setup
 /*
  * Softness 
  * Blue : #5587A2 / RGB : 85 135 162
- * Pink : 64BFA4
- * Green : F2B2AE
+ * Green: #64BFA4 / RGB : 100 192 164
+ * Pink : #F2B2AE / RGB : 242 178 174
  * 
  * Old
  * Red : #EF3340
@@ -98,7 +98,7 @@ body{
 }
 
 .tr_horaires, .tr_horaires .td_postes, .tr_separation, .tr_separation .td_postes{
-  color:#FFFFFF;
+  color:#000;
   font-family:Arial;
   font-weight:bold;
   padding:0 4px;
@@ -214,62 +214,62 @@ td.menu_td{
 td.td_obligatoire, td.td_renfort, 
 td.td_obligatoire select, td.td_renfort select, 
 td.td_obligatoire a, td.td_renfort a{
-  background: #d5edf3; 
+  background: rgba(85, 135, 162, 0.3);
   color: #000;
 }
 
 /* Bleu */
 .bleu.tr_horaires, .bleu.tr_separation, .bleu.tr_horaires td.td_postes{
-  background: #009DD9;
-  color: #000;
+  background: rgba(85, 135, 162, 1);
+  color: #FFF;
 }
 
 .bleu td.td_postes{
-  background: #CCECF8; 
+  background: rgba(85, 135, 162, 0.3);
   color: #000;
 }
 
 /* Jaune */
 .jaune.tr_horaires, .jaune.tr_separation, .jaune.tr_horaires td.td_postes{
-  background: #d7c942;
+  background: rgba(100, 192, 164, 1);
   color: #000;
 }
 
 .jaune td.td_postes{
-  background: #efe0a3; 
+  background: rgba(100, 192, 164, 0.3);
   color: #000;
 }
 
 /* Rouge */
 .rouge.tr_horaires, .rouge.tr_separation, .rouge.tr_horaires td.td_postes{
-  background: #c1322a;
-  color: #FFF;
+  background: rgba(242, 178, 174, 1);
+  color: #000;
 }
 
 .rouge td.td_postes{
-  background: #eacac9; 
+  background: rgba(242, 178, 174, 0.3);
   color: #000;
 }
 
 /* Violet */
 .violet.tr_horaires, .violet.tr_separation, .violet.tr_horaires td.td_postes{
-  background: purple;
-  color: #FFF;
+  background: rgba(242, 178, 174, 1);
+  color: #000;
 }
 
 .violet td.td_postes{
-  background: #E3D8F7; 
+  background: rgba(242, 178, 174, 0.3);
   color: #000;
 }
 
 /* Vert */
 .vert.tr_horaires, .vert.tr_separation, .vert.tr_horaires td.td_postes{
-  background: #09B528;
-  color: #FFF;
+  background: rgba(100, 192, 164, 1);
+  color: #000;
 }
 
 .vert td.td_postes{
-  background: #BFEEC8; 
+  background: rgba(100, 192, 164, 0.3);
   color: #000;
 }
 
