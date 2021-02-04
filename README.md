@@ -3,5 +3,5 @@
 Modernity, innovation, energy and professionalism are expressed by this new theme for Planning Biblio.
 Thinner strokes, minimalist icons, flat designs and curved angles are the main features of this theme to modernize Planning Biblio's interface.
 
-Watch the following video (in French) to get a preview of the theme !
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TRYpmR6k_bw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Watch the following video (in French) by clicking on the image to get a preview of the theme ! C
+[![Planning Biblio](http://img.youtube.com/vi/TRYpmR6k_bw/0.jpg)](http://www.youtube.com/watch?v=TRYpmR6k_bw "Démo thème")
