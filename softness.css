@@ -19,6 +19,7 @@ included by templates/base.html.twig, public/include/header.php and public/setup
  * Teal : #00656b / RGB : 0 101 107
  * Yellow : #ffd700 / RGB : 255 215 0
  * Red : #da1f27 / RGB : 218 31 39
+ *
  * Old
  * Red : #EF3340
  * Grey : #333
@@ -165,6 +166,22 @@ td.menu_td2, td.menu_td2:hover{
   min-width: 200px;
   padding:4px 10px;
   white-space:nowrap;
+}
+
+#tabsemaine1 tr {
+  background : none;
+}
+
+#tabsemaine1 tr:not(.pl-line, .tr_espace) td{
+  background-color: #1e4c67;
+}
+
+#tabsemaine1 tr:not(.pl-line, .tr_espace) td:first-child{
+  border-top-left-radius : 10px;
+}
+
+#tabsemaine1 tr:not(.pl-line, .tr_espace) td:last-child{
+  border-top-right-radius : 10px;
 }
 
 .tr_horaires, .tr_horaires .td_postes, .tr_separation, .tr_separation .td_postes{
@@ -638,6 +655,26 @@ td.td_obligatoire a, td.td_renfort a{
   background: #00656b;
   color: #FFF;
 }
+
+#tabsemaine1 tr:not(.pl-line) td:not(td:last-child), .tabsemaine1 tr:not(.pl-line) td:not(td:last-child){
+  border: 0.1px solid #fff;
+  border-right: none;
+  border-bottom: none;
+}
+
+#tabsemaine1 .pl-line td, .tabsemaine1 .pl-line td {
+  border: 0.1px solid #00656b;
+}
+
+#tabsemaine1 .pl-line td:not(td:last-child), .tabsemaine1 .pl-line td:not(td:last-child){
+  border-right: none;
+}
+
+.pl-line td:first-child{
+  background: rgba(0, 101, 107, 0.75);
+  color : #fff;
+}
+
 
 #div_lignes td.td_obligatoire, #div_lignes td.td_obligatoire>*{
   background: #fff !important;
